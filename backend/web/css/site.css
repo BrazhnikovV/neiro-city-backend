@@ -1,0 +1,32 @@
+/*!
+ *   Main Web Application
+ *   Author: brazhnikov vasya
+ *	 Website: Almsaeed Studio <http://.io>
+ *   License: Open source - MIT
+ *           Please visit http://opensource.org/licenses/MIT for more information
+ */
+/*
+ * Core: General Layout Style
+ * -------------------------
+ */
+html,
+body {
+    height: 100%;
+}
+
+#banners {
+    margin-top: 60px;
+}
+
+#banners img {
+    cursor: pointer;
+}
+#auth {
+    margin-top: 60px;
+}
+.well {
+    margin-top: 15px;
+}
+@media(max-width:767px) {
+    
+}

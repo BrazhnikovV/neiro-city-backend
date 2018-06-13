@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project name="Deploy Appupdater" default="deploy">
+    <target name="deploy">        
+        <scp trust="yes" todir="vasek@139977.simplecloud.ru:/var/www/appupdater-yii2" password="34rt12wecfdf">
+            <fileset dir="${basedir}" />  
+        </scp>
+        <sshexec 
+            trust="yes"
+            host="139977.simplecloud.ru" 
+            username="vasek" 
+            password="34rt12wecfdf" 
+            command="mkdir -p -m 777 /var/www/appupdater-yii2/backend/runtime"/>
+        <sshexec 
+            trust="yes"
+            host="139977.simplecloud.ru" 
+            username="vasek" 
+            password="34rt12wecfdf" 
+            command="mkdir -p -m 777 /var/www/appupdater-yii2/backend/web/assets"/>
+    </target>
+</project>
