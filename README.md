@@ -59,3 +59,10 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 # neiro-city-backend
+# Установка
+
+# https://github.com/BrazhnikovV/neiro-city-backend.git .
+# composer install
+# mkdir backend/web/assets
+# chnod -R 777 backend/web/assets
+# config DB: backend/config/db.php
